@@ -1,5 +1,14 @@
 ScrollReveal({ reset: true });
 
+// Apresentação
+ScrollReveal().reveal('.texto-apresentacao', { 
+    duration: 3000,
+    distance: '500px',
+    easing: 'ease',
+    origin: 'left',
+    opacity: 0,
+});
+
 // Sobre mim
 ScrollReveal().reveal('.sobre-mim-imagem', { 
     duration: 3000,
@@ -16,22 +25,20 @@ ScrollReveal().reveal('.sobre-mim-texto', {
     opacity: 0,
 });
 
-// Projetos
-ScrollReveal().reveal('.projeto-card:nth-child(1)', { 
-    duration: 2000,
-    distance: '600px',
-    easing: 'ease-in-out',
-    origin: 'right',
-});
-ScrollReveal().reveal('.projeto-card:nth-child(2)', { 
-    duration: 2500,
-    distance: '600px',
-    easing: 'ease-in-out',
-    origin: 'right',
-});
-ScrollReveal().reveal('.projeto-card:nth-child(3)', { 
+// Habilidades
+ScrollReveal().reveal('.grupo-habilidades', { 
     duration: 3000,
-    distance: '600px',
-    easing: 'ease-in-out',
+    distance: '300px',
+    easing: 'ease',
+    origin: 'left',
+    opacity: 0,
+});
+
+// Projetos
+ScrollReveal().reveal('.conteudo-projetos', { 
+    duration: 3000,
+    distance: '500px',
+    easing: 'ease',
     origin: 'right',
+    opacity: 0,
 });
