@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pedro Gutierre - Portifolio</title>
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="/src/css/estilos.css">
+    <link rel="stylesheet" href="/src/css/responsivo.css">
+
+    <!-- ScrollReveal -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!-- EmailJS -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+      (function() {
+          emailjs.init("wYxWucm4BlCtj3f_D");
+      })();
+    </script>
+    
+    <!-- Links JS -->
+    <script src="src/js/email.js"></script>
+    <script src="src/js/ver-mais-projetos.js"></script>
+    <script src="src/js/scroll.js" defer></script>
+  </head>
+  <body>
+
+    <!-- Cabeçalho -->
+    <header class="cabecalho">
+      <div class="logo">
+        <a href="#"><i class="fa-solid fa-code"></i></a>
+      </div>
+      <nav class="menu">
+        <ul>
+          <li><a href="#sobre-mim">Sobre mim</a></li>
+          <li><a href="#habilidades">Habilidades</a></li>
+          <li><a href="#projetos">Projetos</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </nav>
+    </header>
+  
+    <!-- Apresentação -->
+    <section class="apresentacao" id="apresentacao">
+      <div class="apresentacao-card">
+        <div class="texto-apresentacao">
+          <h1>Olá, eu sou o <br><span>Pedro Gutierre</span></h1>
+          <h2>Um iniciante na área de Desenvolvimento Web</h2>
+          <a class="curriculo" href="/src/cv/Curriculo Pedro Gutierre.pdf" download="Curriculo Pedro Gutierre"><i class="fa-solid fa-file-export"></i>Veja meu cúrriculo!</a>
+        </div>
+      </div>
+      <div class="imagem-apresentacao"alt="Fundo geométrico abstrato com formas retangulares e quadradas em tons de cinza, com linhas e pontos brancos espalhados pelo design"></div>
+    </section>
+    
+    
+    <!-- Sobre mim -->
+    <section class="sobre-mim" id="sobre-mim">
+      <div class="container-sobre-mim">
+        <div class="conteudo-sobre-mim">
+
+          <div class="sobre-mim-imagem">
+            <img src="src/imagens/foto/foto.webp" alt="Foto de Pedro Gutierre">
+          </div>
+  
+          <div class="sobre-mim-texto">
+            <h2 class="titulo-sessao">SOBRE MIM</h2>
+            <p>Sou um desenvolvedor frontend em início de carreira, apaixonado por criar interfaces de usuário intuitivas e atraentes. Minha jornada na programação começou com uma curiosidade insaciável e se transformou em uma busca constante por aprendizado e aperfeiçoamento.</p><br>
+            <p>Atualmente, estou focado em aprimorar minhas habilidades em HTML, CSS e JavaScript, sempre buscando as melhores práticas e as mais recentes tecnologias do mercado. Acredito que a combinação de design criativo e código limpo é a chave para criar experiências web excepcionais.</p>
+          </div>
+          
+        </div>
+      </div>
+    </section>
+  
+    <!-- Habilidades -->
+    <section class="container-habilidades" id="habilidades">
+      <h2 class="titulo-sessao">HABILIDADES</h2>
+      <p class="descricao-sessao">Essas são minhas principais habilidades.</p>
+      <div class="grupo-habilidades">
+        <div class="titulo-habilidades">
+          <h3 id="frontend">Frontend</h3>
+        </div>
+        <div class="habilidades-grid">
+          <div class="habilidades-card">
+            <img src="src/imagens/habilidades/html.png" alt="ícone do HTML">
+            <div class="info-habilidades">
+              <H4>HTML</H4>
+            </div>
+          </div>
+          <div class="habilidades-card">
+            <img src="src/imagens/habilidades/css.png" alt="ícone do CSS">
+            <div class="info-habilidades">
+              <h4>CSS 3</h4>
+            </div>
+          </div>
+          <div class="habilidades-card">
+            <img src="src/imagens/habilidades/javascript.png" alt="ícone do JavaScript">
+            <div class="info-habilidades">
+              <h4>JavaScript</h4>
+            </div>
+          </div>
+          <div class="habilidades-card">
+            <img src="src/imagens/habilidades/bootstrap.png" alt="ícone do Bootstrap">
+            <div class="info-habilidades">
+              <h4>BootStrap</h4>
+            </div>
+          </div>
+      </div>
+      <div class="grupo-habilidades">
+
+      <div class="titulo-habilidades">
+        <h3 id="backend">Backend & Ferramentas</h3>
+      </div>
+      <div class="habilidades-grid" id="backend">
+        <div class="habilidades-card">
+        <img src="src/imagens/habilidades/figma.png" alt="ícone do Figma">
+          <div class="info-habilidades">
+            <h4>Figma</h4>
+          </div>
+        </div>
+        <div class="habilidades-card">
+          <img src="src/imagens/habilidades/java.png" alt="ícone do Java">
+          <div class="info-habilidades">
+            <h4>Java</h4>
+          </div>
+        </div>
+        <div class="habilidades-card">
+          <img src="src/imagens/habilidades/mysql.png" alt="ícone do MySql">
+          <div class="info-habilidades">
+            <h4>MySql</h4>
+          </div>
+        </div>
+        <div class="habilidades-card">
+          <img src="src/imagens/habilidades/python.png" alt="ícone do Python">
+          <div class="info-habilidades">
+            <h4>Python</h4>
+          </div>
+        </div>
+      </div>       
+    </section>
+  
+    <!-- Projetos -->
+    <section class="container-projetos" id="projetos">
+      <h2 class="titulo-sessao">PROJETOS</h2>
+      <p class="descricao-sessao">Esses são alguns de meus projetos como desenvolvedor.</p>
+      <div class="conteudo-projetos">
+        <div class="projeto-card">
+          <img src="src/imagens/projetos/projeto-gameink.png" alt="Projeto GameINK">
+          <div class="projeto-detalhes">
+            <h3>Projeto GameINK</h3>
+            <p>Um site com diversas noticias sobre games e tecnologia.</p>
+            <div class="projeto-link">
+              <a href="https://pedro-gutierre18.github.io/Blog-GAMEINK/">Ver projeto</a>
+            </div>
+          </div>
+        </div>
+        <div class="projeto-card">
+          <img src="src/imagens/projetos/projeto-pokedex.png" alt="Projeto Pokédex">
+          <div class="projeto-detalhes">
+            <h3>Projeto Pokédex</h3>
+            <p>Pokédex de com 649 pokémons, usando a pokéAPI.</p>
+            <div class="projeto-link">
+              <a href="https://pedro-gutierre18.github.io/pokedex/">Ver projeto</a>
+            </div>
+          </div>
+        </div>
+        <div class="projeto-card">
+          <img src="src/imagens/projetos/projeto-wikipedia-moderno.png" alt="Projeto Wikipédia">
+          <div class="projeto-detalhes">
+            <h3>Projeto Wikipedia moderno </h3>
+            <p>Site com a proposta de repaginar o visual do Wikipédia.</p>
+            <div class="projeto-link">
+              <a href="https://pedro-gutierre18.github.io/Wikipedia-moderno-DIO/">Ver projeto</a>
+            </div>
+          </div>
+        </div>
+        
+
+      </div>
+    </section>
+  
+    <!-- Contato -->
+    <section class="container-contato" id="contato">
+      <h2 class="titulo-sessao">CONTATO</h2>
+      <p class="descricao-sessao">Vamos trabalhar juntos! Entre em contato comigo para discutir seu projeto ou oportunidade de colaboração.</p>    
+      <div class="conteudo-contato">
+
+        <div class="informacoes-contato">
+          <div class="contato-card">            
+            <i class="fas fa-envelope" alt="email"></i>
+            <p>ledrogutierre@gmail.com</p>
+          </div>
+          <div class="contato-card">
+            <i class="fas fa-phone" alt="telefone para contato"></i>
+            <p>+55 (11)94464-3105</p>  
+          </div>
+          <div class="contato-card">
+            <i class="fas fa-map-marker-alt" alt="endereço"></i>
+            <p>São Paulo, São Paulo - Brasil</p>
+        </div>
+        <div class="midias-sociais">
+            <a href="https://github.com/Pedro-Gutierre18" class="social-icon"><i class="fab fa-github" alt="GitHub de Pedro Gutierre"></i></a>
+            <a href="https://www.instagram.com/pedro.gutierre.144/" class="social-icon"><i class="fab fa-instagram" alt="Instagram de Pedro Gutierre"></i></a>
+            <a href="https://www.linkedin.com/in/pedro-gutierre/" class="social-icon"><i class="fab fa-linkedin" alt="Linkedin de Pedro Gutierre"></i></a>
+            <a href="https://wa.me/+5511944643105" class="social-icon"><i class="fab fa-whatsapp" alt="Whatsapp de Pedro Gutierre"></i></a>
+        </div>
+      </div>
+
+      <form class="form-contato" onsubmit="enviarEmail(event)">
+        <input type="text" id="nome" placeholder="Seu Nome" required>
+        <input type="email" id="email" placeholder="Seu Email" required>
+        <textarea id="mensagem" placeholder="Sua Mensagem" rows="5" required></textarea>
+        <button type="submit" class="botao-submit">Enviar mensagem<i class="fa-solid fa-paper-plane"></i></button>
+    </form>
+           
+      
+    </section>
+  
+    <!-- Rodapé -->
+    <footer class="rodape">
+        <p>Website by <span>Pedro Gutierre</span></p>
+    </footer>
+    
+  </body>
+</html>

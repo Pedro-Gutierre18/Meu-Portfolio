@@ -1,0 +1,192 @@
+/* Tablets (max-width: 768px) */
+@media (max-width: 768px) {
+  /* Configurações Gerais */
+  html {
+    overflow-x: hidden;
+  }
+
+  /* Cabeçalho */
+  .cabecalho {
+    padding: 0 1rem;
+  }
+
+  .cabecalho .menu {
+    font-size: 1rem;
+  }
+
+  .cabecalho .menu li a {
+    margin: 0 8px;
+  }
+
+  /* Seções Flexíveis */
+  .apresentacao,
+  .sobre-mim,
+  .container-habilidades,
+  .container-projetos {
+    height: auto;
+    padding: 4rem 0;
+  }
+
+  /* Layout Flexível */
+  .apresentacao {
+    flex-direction: column;
+  }
+
+  .apresentacao-card {
+    width: 100%;
+    padding: 0 2rem;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .imagem-apresentacao {
+    opacity: 0;
+  }
+
+  /* Sobre Mim */
+  .conteudo-sobre-mim {
+    flex-direction: column;
+    gap: 40px;
+    padding: 0 2rem;
+  }
+  
+  .sobre-mim-texto {
+    max-width: 600px;
+  }
+  .sobre-mim-texto h2 {
+    text-align: center;
+  }
+
+  /* Habilidades */
+  .container-habilidades .grupo-habilidades .habilidades-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* Projetos */
+  .container-projetos .conteudo-projetos {
+    grid-template-columns: 1fr;
+    padding: 0 2rem;
+  }
+
+  /* Contato */
+  .conteudo-contato {
+    flex-direction: column;
+    margin: 15px;
+  }
+
+  .container-contato .conteudo-contato .informacoes-contato {
+    margin-right: 0;
+    margin-bottom: 30px;
+  }
+}
+
+/* Mobile (max-width: 480px) */
+@media (max-width: 480px) {
+  /* Cabeçalho */
+  .cabecalho {
+    padding: 0 1rem;
+    width: 100%;
+  }
+
+  .cabecalho .menu {
+    opacity: 0;
+  }
+
+  /* Apresentação */
+  .apresentacao {
+    padding: 1rem 0;
+  }
+
+  .texto-apresentacao {
+    text-align: center;
+  }
+
+  .texto-apresentacao h1 {
+    font-size: 1.5rem;
+  }
+
+  .texto-apresentacao span {
+    font-size: 2.5rem;
+  }
+
+  .texto-apresentacao h2 {
+    font-size: 1.5rem;
+    margin: 0;
+    padding: 0;
+  }
+
+  .texto-apresentacao a {
+    font-size: 1.1rem;
+  }
+
+  /* Sobre Mim */
+  .sobre-mim {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .sobre-mim-imagem {
+    max-width: 250px;
+  }
+
+  .sobre-mim-texto {
+    max-width: 250px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .sobre-mim-texto h2 {
+    margin: 0 auto;
+  }
+
+  .sobre-mim-texto p {
+    font-size: 1rem;
+  }
+
+  /* Habilidades */
+  .container-habilidades {
+    padding: 1rem 0;
+    margin: 0 auto;
+  }
+
+  .habilidades-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    justify-items: center;
+  }
+
+  .habilidades-card {
+    min-width: 150px;
+  }
+
+  .titulo-habilidades h3 {
+    font-size: 1.5rem;
+  }
+
+  /* Projetos */
+  .container-projetos {
+    margin: 0;
+    padding: 0;
+  }
+
+  .projeto-card {
+    max-width: 400px;
+    height: auto;
+    margin: 0 auto;
+  }
+
+  .projeto-card img {
+    width: 100%;
+    height: 150px;
+  }
+
+  .projeto-card .projeto-detalhes h3 {
+    font-size: 1.5rem;
+  }
+
+  .projeto-card .projeto-detalhes p {
+    font-size: 1rem;
+  }
+}
