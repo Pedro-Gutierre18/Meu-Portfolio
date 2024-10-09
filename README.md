@@ -12,3 +12,8 @@ Foi muito divertido criar esse portfólio, criando ele, melhorei minhas habilida
 
 ## ⚙️Ferramentas Utilizadas:
 ![My Skills](https://skillicons.dev/icons?i=html,css,javascript,figma)
+
+## Preview do site 
+<div>
+  <img src="src/imagens/redme/site.png">
+</div>
