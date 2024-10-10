@@ -16,4 +16,4 @@ Foi muito divertido criar esse portfólio, criando ele, melhorei minhas habilida
 ## Preview do site 
 <div>
   <img src="src/imagens/redme/site.png">
-</div>
+</div> 
