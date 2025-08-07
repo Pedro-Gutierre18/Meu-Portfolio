@@ -1,5 +1,5 @@
-url: https://pedro-gutierre18.github.io
-baseurl: Meu-Portfolio
+url: "https://pedro-gutierre18.github.io"
+baseurl: "/Meu-Portfolio"
 
 # Site settings
 title: Meu Portfolio
