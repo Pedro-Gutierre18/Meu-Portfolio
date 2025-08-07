@@ -739,6 +739,15 @@ section#sobre-mim .icones a{
     padding-left: 0;
 }
 
+@media (max-width: 768px) {
+
+  section#sobre-mim .fw-bold{
+    text-align: center;
+  }
+  #sobre-mim {
+    margin-bottom: 200px;
+  }
+}
 /* Fim sobre mim */
 
 /* Contato */
