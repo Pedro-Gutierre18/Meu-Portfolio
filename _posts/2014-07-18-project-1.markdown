@@ -1,0 +1,15 @@
+---
+title: Gastos Mensais
+subtitle: Excel
+layout: default
+link: https://github.com/Pedro-Gutierre18/controle-de-gastos-mensais-excel
+modal-id: 1
+date: 2014-07-18
+img: 01_full.jpg
+thumbnail: 01_thumbnail.jpg
+alt: image-alt
+project-date: Julho de 2025
+ferramentas: Excel
+description: Planilha dinâmica para controle financeiro pessoal, com tabelas dinâmicas e gráficos interativos para melhor controle.
+
+---

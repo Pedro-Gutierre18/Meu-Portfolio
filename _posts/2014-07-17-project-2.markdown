@@ -1,0 +1,16 @@
+---
+title: Controle de Compras
+subtitle: Excel, VBA
+layout: default
+link: https://github.com/Pedro-Gutierre18/controle-compras-excel-vba
+modal-id: 2
+date: 2014-07-16
+img: 02_full.jpg
+thumbnail: 02_thumbnail.jpg
+alt: image-alt
+project-date: Julho de 2025
+client: Start Bootstrap
+ferramentas: Excel, VBA
+description: Essas planilhas organizam o controle de compras online. O usuario insere dados como, descrição do produto, link do produto, categoria, valor e nível de prioridade. Depois de cadastrado, os itens vão para a planilha de itens desejados e depois de comprados vão para a planilha de itens comprados.
+
+---
