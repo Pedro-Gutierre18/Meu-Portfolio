@@ -739,13 +739,13 @@ section#sobre-mim .icones a{
     padding-left: 0;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 740px) {
 
   section#sobre-mim .fw-bold{
     text-align: center;
   }
   #sobre-mim {
-    margin-bottom: 350px;
+    margin-bottom: 500px !important;
   }
 }
 /* Fim sobre mim */
