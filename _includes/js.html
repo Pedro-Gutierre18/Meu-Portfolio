@@ -1,5 +1,6 @@
- <!-- jQuery Version 1.11.0 -->
-    <script src="{{ "/js/jquery-1.11.0.js" | prepend: site.baseurl }}"></script>
+    <!-- jQuery Version 1.11.0 -->
+   <script src="{{ "/js/jquery-1.11.0.js" | prepend: site.baseurl }}"></script>
+   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
     <!-- Bootstrap Core JavaScript -->
     <script src="{{ "/js/bootstrap.min.js" | prepend: site.baseurl }}"></script>
@@ -9,9 +10,20 @@
     <script src="{{ "/js/classie.js" | prepend: site.baseurl }}"></script>
     <script src="{{ "/js/cbpAnimatedHeader.js" | prepend: site.baseurl }}"></script>
 
-    <!-- Contact Form JavaScript -->
-    <script src="{{ "/js/jqBootstrapValidation.js" | prepend: site.baseurl }}"></script>
-    <script src="{{ "/js/contact_me.js" | prepend: site.baseurl }}"></script>
-
     <!-- Custom Theme JavaScript -->
     <script src="{{ "/js/agency.js" | prepend: site.baseurl }}"></script>
+
+   <!-- Isotope -->
+   <script src="{{ "/js/isotope.js" | prepend: site.baseurl }}"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js"></script>
+   
+   <!-- AOS  Library-->
+   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        
+        AOS.init({
+            duration: 800,
+            once: true,
+            offset: 200,
+        });
+    </script>

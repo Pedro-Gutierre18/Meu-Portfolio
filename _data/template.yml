@@ -7,5 +7,13 @@ color:
 
 # Font Families
 font:
-  primary: 'Montserrat, "Helvetica Neue",Helvetica,Arial,sans-serif'
+  primary: 'Inter,"Helvetica",Arial,sans-serif'
   secondary: '"Merriweather", "Source Sans Pro", Helvetica,Arial,sans-serif'
+
+# Títulos e Subtítulos
+title:
+  habilidades: Habilidades
+  projetos: Projetos
+  formacoes: Formações
+  sobre-mim: Sobre mim
+  contato: Contato

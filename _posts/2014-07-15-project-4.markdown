@@ -1,15 +1,15 @@
 ---
+layout: default
 title: Projeto 4
 subtitle: Em andamento
-layout: default
 modal-id: 4
-date: 2014-07-15
-img: treehouse.png
-thumbnail: 04_thumbnail.jpg
+date: 2025-08-20
+img: 02_full.jpg
+thumbnail: 02_thumbnail.jpg
 alt: image-alt
-project-date: April 2014
+project-date: Agosto 2025
 client: Start Bootstrap
-category: Web Development
+category: em-andamento
 description: Lorem ipsum dolor sit amet, usu cu alterum nominavi lobortis. At duo novum diceret. Tantas apeirian vix et, usu sanctus postulant inciderint ut, populo diceret necessitatibus in vim. Cu eum dicam feugiat noluisse.
 
 ---

@@ -1,0 +1,59 @@
+<section id="contato" class="contact-section" data-aos="fade-up">
+    <div class="container">
+        <div class="col-lg-12 text-center">
+            <h2 class="section-heading">{{ site.data.template.title.contato }}</h2>
+        </div>
+        
+        <div class="row justify-content-center align-items-center">
+
+            <div class="col-lg-7"> 
+                <form action="https://formspree.io/f/xyzprrov" method="POST">
+                    <div class="form-group-outline">
+                        <label for="name">NOME</label>
+                        <input type="text" id="name" name="name" class="form-control-outline" required>    
+                    </div>
+
+                    <div class="form-group-outline">
+                        <label for="email">E-MAIL</label>
+                        <input type="email" id="email" name="email" class="form-control-outline" required>                     
+                    </div>
+
+                    <div class="form-group-outline">
+                        <label for="message">MENSAGEM</label>
+                        <textarea id="message" name="message" class="form-control-outline" rows="5" required></textarea>                        
+                    </div>
+
+                    <button type="submit" class="btn-submit">
+                        <span>Enviar mensagem</span><i class="fas fa-paper-plane"></i>
+                    </button>
+                </form>
+            </div>
+
+            <div class="col-lg-5">
+                <div class="contact-info">
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt fa-fw"></i>
+                        <span>São Paulo, SP</span>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-phone fa-fw"></i>
+                        <span>+55 11 93382-4309</span>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-envelope fa-fw"></i>
+                        <span>ledrogutierre@email.com</span>
+                    </div>
+
+                    <hr class="contact-divider">
+
+                    <div class="social-icons">
+                        <a href="#" class="social-icon"><i class="fab fa-github"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
