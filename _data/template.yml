@@ -3,7 +3,6 @@ color:
   primary: 1560BD
   secondary: 4A90E2   
   secondary-dark: 333
-  muted: 777
 
 # Font Families
 font:

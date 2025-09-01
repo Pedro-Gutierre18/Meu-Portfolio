@@ -2112,3 +2112,71 @@ if (typeof jQuery === 'undefined') { throw new Error('Bootstrap\'s JavaScript re
   })
 
 }(jQuery);
+
+$(function () {
+  
+  // Encontra todos os tooltips e os inicializa com a opção 'container'
+  // Esta é a linha que corrige o posicionamento.
+  $('[data-toggle="tooltip"]').tooltip({
+    container: 'body'
+  });
+
+});
+
+// Adicione este bloco dentro do seu 'DOMContentLoaded' ou no script principal
+const contactForm = document.getElementById('contact-form');
+const toastNotification = document.getElementById('toast-notification');
+
+if (contactForm) {
+    contactForm.addEventListener('submit', function (event) {
+        event.preventDefault(); // Previne o redirecionamento da página
+
+        const formData = new FormData(contactForm);
+        const submitButton = contactForm.querySelector('button[type="submit"]');
+        const originalButtonText = submitButton.innerHTML;
+
+        // Desabilita o botão e mostra "Enviando..." para o usuário
+        submitButton.disabled = true;
+        submitButton.innerHTML = 'Enviando...';
+
+        fetch(contactForm.action, {
+            method: 'POST',
+            body: formData,
+            headers: {
+                'Accept': 'application/json'
+            }
+        }).then(response => {
+            if (response.ok) {
+                // Se o envio foi um sucesso:
+                
+                // 1. Mostra a notificação Toast
+                toastNotification.classList.add('show');
+                
+                // 2. Limpa o formulário
+                contactForm.reset();
+                
+                // 3. Esconde a notificação após 3 segundos
+                setTimeout(() => {
+                    toastNotification.classList.remove('show');
+                }, 3000);
+
+            } else {
+                // Se deu erro, avisa o usuário (pode criar um toast de erro)
+                response.json().then(data => {
+                    if (Object.hasOwn(data, 'errors')) {
+                        alert(data["errors"].map(error => error["message"]).join(", "));
+                    } else {
+                        alert('Oops! Houve um problema ao enviar seu formulário.');
+                    }
+                })
+            }
+        }).catch(error => {
+            // Se deu erro de rede
+            alert('Oops! Houve um problema de conexão.');
+        }).finally(() => {
+            // Reabilita o botão e restaura o texto original
+            submitButton.disabled = false;
+            submitButton.innerHTML = originalButtonText;
+        });
+    });
+}

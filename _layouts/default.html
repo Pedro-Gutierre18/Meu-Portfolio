@@ -1,20 +1,16 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-br">
 
+  <!-- O 'head.html' é incluído aqui -->
   {% include head.html %}
 
+  <body id="page-top" class="index {{ page.body_class }}">
 
-    <body id="page-top" class="index">
+    {{ content }}
 
-    {% include header.html %}
-    {% include habilidades.html %}
-    {% include projetos.html %}
-    {% include experiencias.html %}
-    {% include sobre-mim.html %}
-    {% include contato.html %}
     {% include footer.html %}
-    {% include modals.html %}
+    
     {% include js.html %}
 
-    </body>
+  </body>
 </html>

@@ -3,6 +3,7 @@
    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
     <!-- Bootstrap Core JavaScript -->
+    <script src="{{ '/js/bootstrap.js' | prepend: site.baseurl }}"></script>
     <script src="{{ "/js/bootstrap.min.js" | prepend: site.baseurl }}"></script>
 
     <!-- Plugin JavaScript -->
@@ -13,17 +14,9 @@
     <!-- Custom Theme JavaScript -->
     <script src="{{ "/js/agency.js" | prepend: site.baseurl }}"></script>
 
+    <!-- Custom JS -->
+    <script src="{{ "/js/IO.js" | prepend: site.baseurl }}"></script>
+
    <!-- Isotope -->
    <script src="{{ "/js/isotope.js" | prepend: site.baseurl }}"></script>
    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js"></script>
-   
-   <!-- AOS  Library-->
-   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>
-        
-        AOS.init({
-            duration: 800,
-            once: true,
-            offset: 200,
-        });
-    </script>

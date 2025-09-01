@@ -1,5 +1,5 @@
 <!-- Portfolio Grid Section -->
-<section id="projetos" class="bg-light-gray py-5" data-aos="fade-up">
+<section id="projetos" class="bg-light-gray animate-on-scroll fade-in">
     <div class="container">
         <div class="row">
             <div class="col-lg-12 text-center">
@@ -10,31 +10,30 @@
         <div id="filters" class="filtros-projeto">
             <button class="btn-filtro active" data-filter="*">Todos</button>
             <button class="btn-filtro" data-filter=".excel">Excel</button>
-            <button class="btn-filtro" data-filter=".vba">VBA</button>
+            <button class="btn-filtro" data-filter=".python">Pyhton</button>
             <button class="btn-filtro" data-filter=".em-andamento">Em andamento</button>
         </div>
 
         <div class="row grid">
             
-            {% for post in site.posts %}
-            <div class="col-lg-4 col-md-6 mb-4 grid-item {{ post.category }}">
+            {% for project in site.projects %}
+                <div class="col-lg-4 col-md-6 mb-4 grid-item {{ project.category }}">
+                    <div class="projeto-card-container">
+                        
+                        <a href="{{ project.url | prepend: site.baseurl }}" class="portfolio-link">
 
-                <div class="projeto-card-container">
+                            <img src="{{ "/img/portfolio/" | prepend: site.baseurl }}{{ project.thumbnail }}" class="img-fluid" alt="{{ project.alt }}">
 
-                    <a href="#portfolioModal{{ post.modal-id }}" class="portfolio-link" data-bs-toggle="modal">
-
-                        <img src="img/portfolio/{{ post.thumbnail }}" class="img-fluid" alt="{{ post.alt }}">
-
-                        <div class="projeto-overlay">
-                            <div class="overlay-content">
-                                <h5>{{ post.title }}</h5>
-                                <p class="text-white-50">{{ post.subtitle }}</p>
+                            <div class="projeto-overlay">
+                                <div class="overlay-content">
+                                    <h5>{{ project.title }}</h5>
+                                    <p class="text-white-50">{{ project.subtitle }}</p>
+                                </div>
                             </div>
-                        </div>
 
-                    </a>
+                        </a>
+                    </div>
                 </div>
-            </div>
             {% endfor %}
             
         </div>

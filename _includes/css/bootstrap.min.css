@@ -3601,22 +3601,14 @@ textarea.input-group-sm>.form-control,textarea.input-group-sm>.input-group-addon
     }
 }
 .navbar-default {
-    background-color:# {
-        {
-            site.data.template.color.secondary
-        }
-    };
+    background-color:# {{site.data.template.color.secondary}};
     border-color:transparent
 }
 .navbar-default .navbar-brand {
     color:#ffffff
 }
 .navbar-default .navbar-brand:hover,.navbar-default .navbar-brand:focus {
-    color:# {
-        {
-            site.data.template.color.primary
-        }
-    };
+    color:# {{site.data.template.color.primary}};
     background-color:transparent
 }
 .navbar-default .navbar-text {

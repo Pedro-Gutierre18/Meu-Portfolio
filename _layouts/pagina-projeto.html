@@ -1,0 +1,105 @@
+---
+layout: default
+body_class: page-project-layout
+---
+
+<div class="project-page-wrapper">
+
+    {%- for project in site.projects -%}
+        {%- if page.url == project.url -%}
+            {%- assign current_index = forloop.index0 -%}
+            {%- assign previous_index = current_index | minus: 1 -%}
+            {%- assign next_index = current_index | plus: 1 -%}
+
+            {%- if current_index > 0 -%}
+            {%- assign previous_project = site.projects[previous_index] -%}
+            {%- endif -%}
+
+            {%- if current_index < site.projects.size | minus: 1 -%}
+            {%- assign next_project = site.projects[next_index] -%}
+            {%- endif -%}
+        {%- endif -%}
+    {%- endfor -%}
+
+    {%- if previous_project -%}
+        <a href="{{ previous_project.url | relative_url }}" class="project-nav-button prev" aria-label="Projeto Anterior">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="15 18 9 12 15 6"></polyline>
+            </svg>
+        </a>
+    {%- endif -%}
+
+    {%- if next_project -%}
+        <a href="{{ next_project.url | relative_url }}" class="project-nav-button next" aria-label="Próximo Projeto">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="9 18 15 12 9 6"></polyline>
+            </svg>
+        </a>
+    {%- endif -%}
+
+    <a href="{{ '/' | relative_url }}" class="back-to-home-center" aria-label="Voltar para a página inicial">
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+        <polyline points="9 22 9 12 15 12 15 22"></polyline>
+    </svg>
+</a>
+
+    <header class="project-hero-header" style="background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('{{ "/img/portfolio/" | prepend: site.baseurl }}{{ page.hero_image }}');">
+        <div class="container">
+            <div class="hero-content">
+                <h1>{{ page.title }}</h1>
+                <p class="summary">{{ page.summary }}</p>
+                <div class="tools-list">
+                    <strong>Ferramentas:</strong> {{ page.tools }}
+                </div>
+                {% if page.source_code_url %}
+                    <a href="{{ page.source_code_url }}" class="btn btn-primary btn-lg mt-4" target="_blank">Veja o Código</a>
+                {% endif %}
+            </div>
+        </div>
+    </header>
+
+        <main class="project-body container">
+            {% for section in page.sections %}
+            <section id="section-{{ forloop.index }}" class="project-section">
+                <div class="row">
+                    <div class="col-lg-4">
+                        <h2 class="section-heading">{{ section.title }}</h2>
+                    </div>
+                    <div class="col-md-8">
+                        <div class="section-content">
+                            <p>{{ section.content | markdownify }}</p>
+
+                            {% if section.image %}
+                            <img src="{{ "/img/portfolio/" | prepend: site.baseurl }}{{ section.image }}"alt="Imagem ilustrativa para {{ section.title }}" class="section-image">
+                            {% endif %}
+
+                            {% if section.content2 %}
+                                <p>{{ section.content2 | markdownify }}</p>
+                            {% endif %}
+                        </div>
+                    </div>
+                </div>
+            </section>
+            {% endfor %}
+        </main>
+
+        <div class="floating-index">
+            <button class="fab-toggler">
+                <i class="icon-menu fas fa-bars"></i>
+                <i class="icon-close fa-solid fa-xmark"></i>
+            </button>
+            <ul class="fab-links">
+            {% for section in page.sections %}
+            <li>
+                <a href="#section-{{ forloop.index }}">
+                    {% if section.icon %}
+                        <i class="{{ section.icon }}"></i>
+                    {% endif %}
+                    <span>{{ section.title }}</span>
+                </a>
+            </li>
+            {% endfor %}
+            </ul>
+        </div>
+</div>
