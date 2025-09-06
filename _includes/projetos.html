@@ -10,6 +10,7 @@
         <div id="filters" class="filtros-projeto">
             <button class="btn-filtro active" data-filter="*">Todos</button>
             <button class="btn-filtro" data-filter=".excel">Excel</button>
+            <button class="btn-filtro" data-filter=".powerbi">Power BI</button>
             <button class="btn-filtro" data-filter=".python">Pyhton</button>
             <button class="btn-filtro" data-filter=".em-andamento">Em andamento</button>
         </div>
@@ -17,7 +18,7 @@
         <div class="row grid">
             
             {% for project in site.projects %}
-                <div class="col-lg-4 col-md-6 mb-4 grid-item {{ project.category }}">
+                <div class="col-lg-4 col-md-6 col-sm-12 mb-4 grid-item {{ project.category }}">
                     <div class="projeto-card-container">
                         
                         <a href="{{ project.url | prepend: site.baseurl }}" class="portfolio-link">

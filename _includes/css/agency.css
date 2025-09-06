@@ -468,7 +468,7 @@ section h3.section-subheading {
     
     header .intro-text {
         align-items: center;
-        padding: 20vh 0;
+        padding: 30vh 0;
     }
 
     header .intro-text .intro-lead-in {
@@ -478,7 +478,6 @@ section h3.section-subheading {
         line-height: 40px;
         text-align: left;
         max-width: calc(100% - 30px);
-        border: 1px solid red;
     }
 
     header .intro-text .intro-heading {
@@ -489,7 +488,6 @@ section h3.section-subheading {
         line-height: 45px;
         text-align: left;
         max-width: calc(100% - 30px);
-        border: 1px solid red;
     }
 }
 
@@ -606,7 +604,7 @@ section h3.section-subheading {
     position: relative; 
     cursor: pointer;
     overflow: hidden; 
-    border-radius: 8px; 
+    border-radius: 20px; 
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
     margin: 5px;
 }
@@ -654,7 +652,6 @@ section h3.section-subheading {
 .projeto-card-container:hover .overlay-content {
     transform: translateY(0);
 }
-
 
 /* Experiências */
 .timeline {
@@ -754,14 +751,14 @@ section h3.section-subheading {
     padding: 0 30px;
 }
 
-.imagem-perfil{
+.imagem-perfil {
     margin: 0 auto;
     padding: 0;
     overflow: hidden;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
 }
 
-.imagem-perfil img{
+.imagem-perfil img {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -796,6 +793,9 @@ section h3.section-subheading {
 
     section#sobre-mim .fw-bold {
         text-align: center;
+    }
+    .imagem-perfil {
+        max-width: 80%;
     }
 }
 
@@ -890,33 +890,29 @@ section h3.section-subheading {
     }
 }
 
-/* --- Estilo da Notificação Toast --- */
+/*  Estilo da Notificação Toast  */
 .toast-notification {
-    position: fixed; /* Fica fixo na tela */
-    bottom: 30px; /* Posição vertical */
-    left: 50%; /* Centraliza horizontalmente */
-    transform: translateX(-50%) translateY(100px); /* Começa fora da tela, para baixo */
-    
-    background-color: #000814; /* Cor de fundo (azul escuro do seu tema) */
-    color: #fff; /* Cor do texto */
+    position: fixed; 
+    bottom: 30px; 
+    left: 50%; 
+    transform: translateX(-50%) translateY(100px);   
+    background-color: #0C386E;
+    color: #fff; 
     padding: 16px 24px;
     border-radius: 8px;
     box-shadow: 0 4px 12px rgba(0,0,0,0.15);
-    
     display: flex;
     align-items: center;
-    gap: 10px; /* Espaço entre o ícone e o texto */
-    
-    z-index: 2000; /* Garante que fique sobre outros elementos */
-    opacity: 0; /* Começa invisível */
+    gap: 10px; 
+    z-index: 2000; 
+    opacity: 0; 
     visibility: hidden;
-    
-    transition: all 0.5s cubic-bezier(0.25, 1, 0.5, 1); /* Transição suave */
+    transition: all 0.5s cubic-bezier(0.25, 1, 0.5, 1);
 }
 
 /* Classe que o JavaScript vai adicionar para MOSTRAR o toast */
 .toast-notification.show {
-    transform: translateX(-50%) translateY(0); /* Move para a posição final */
+    transform: translateX(-50%) translateY(0); 
     opacity: 1;
     visibility: visible;
 }
@@ -938,10 +934,6 @@ footer span.copyright {
 /* Pagina de Projetos */
 
 /* Header*/
-.page-project-layout .navbar-default {
-    background-color: #222;
-    border-color: #111;
-}
 
 .project-hero-header {
     height: 50vh;
@@ -967,14 +959,13 @@ footer span.copyright {
 }
 
 .project-hero-header .summary {
-    font-size: 1.2rem;
+    font-size: 1.7rem;
     line-height: 1.7;
     margin-bottom: 2rem;
-    opacity: 0.9;
 }
 
 .project-hero-header .tools-list {
-    font-size: 1rem;
+    font-size: 1.4rem;
     margin-bottom: 2rem;
 }
 
@@ -986,15 +977,25 @@ footer span.copyright {
 .project-hero-header .btn {
     font-weight: bold;
     padding: 12px 28px;
-    border-radius: 8px;
+    border-radius: 20px;
     background-color: transparent;
     transition: all 0.3s ease-in-out;
     border: 3px solid {{site.data.template.color.primary}};
 }
 
-.project-hero-header .btn:hover {
+.project-hero-header .btn:hover,
+.project-hero-header .btn:active,
+.project-hero-header .btn:focus {
+    color: #fff;
     background-color: #{{site.data.template.color.primary}};
 }
+
+@media screen and (max-width: 768px) {
+    .project-hero-header {
+        height: 60vh;
+    }
+}
+
 
 /* Corpo do Estudo de Caso */
 .project-body {
@@ -1015,11 +1016,34 @@ footer span.copyright {
   font-size: 1.1rem;
 }
 
+.section-content .button-dashboard{
+    margin: 15px 0 !important;
+    text-transform: uppercase;
+    border: 1px solid #{{site.data.template.color.primary}};
+    border-radius: 20px;
+    transition: all 0.3s ease-in-out;
+}
+
+.section-content .button-dashboard:hover,
+.section-content .button-dashboard:active,
+.section-content .button-dashboard:focus {
+    color: #fff;
+    background-color: #{{site.data.template.color.primary}};
+}
+
+.section-subheading {
+    color: #000814;
+    margin: 5px 0 !important;
+    font-weight: bold !important;
+    text-transform: uppercase !important;
+    font-style: normal !important;
+}
+
 .section-image {
   width: 100%;
-  border-radius: 8px;
+  border-radius: 20px;
   margin-top: 1.5rem;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
 }
 
 .project-content .section-heading {
@@ -1029,6 +1053,16 @@ footer span.copyright {
 .project-content .section-heading::after {
     left: 0; 
     transform: translateX(0); 
+}
+
+@media screen and (max-width: 991px) {
+        .project-section {
+            max-width: 90%;
+            margin: 0 auto;
+        }
+        .section-image {
+            margin-bottom: 5px;
+        }
 }
 
 /* Botão Flutuante */
@@ -1103,16 +1137,22 @@ footer span.copyright {
 .fab-links li a {
     display: flex;
     align-items: center;
+    font-weight: 500 !important;
     padding: 10px;
     background-color: #fff;
-    color: #222;
-    border-radius: 8px;
+    color: #000814;
+    border-radius: 20px;
     text-decoration: none;
     font-weight: 500;
     box-shadow: 0 2px 8px rgba(0,0,0,0.15);
     white-space: nowrap;
     text-transform: uppercase;
     transition: all 0.3s ease-in-out;
+}
+
+.fab-links li a:hover {
+    background-color: #{{site.data.template.color.primary}};
+    color: #fff;
 }
 
 .floating-index.active .fab-links {
@@ -1183,7 +1223,7 @@ footer span.copyright {
 /* Estilo para Botão Voltar Centralizado (Alternativa) */
 .back-to-home-center {
     position: fixed;
-    top: 30px;
+    top: 10px;
     left: 50%;
     transform: translateX(-50%);
     z-index: 1040;

@@ -1,11 +1,11 @@
 ---
 
 layout: pagina-projeto
-title: Controle de Compras
-subtitle: Sheets, Pyhton
-thumbnail: 02_thumbnail.jpg
-alt: Descrição da imagem
-category: python
+title: Em Andamento
+subtitle: projeto ainda em andamento
+thumbnail: coming-soon.png
+alt: Imagem ilustrativa do projeto
+category: em-andamento
 
 sections:
   - title: "O Desafio"

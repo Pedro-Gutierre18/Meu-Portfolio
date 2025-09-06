@@ -53,7 +53,7 @@ body_class: page-project-layout
                     <strong>Ferramentas:</strong> {{ page.tools }}
                 </div>
                 {% if page.source_code_url %}
-                    <a href="{{ page.source_code_url }}" class="btn btn-primary btn-lg mt-4" target="_blank">Veja o Código</a>
+                <a href="{{ page.source_code_url }}" class="btn btn-primary btn-lg mt-4" target="_blank">Veja o Código</a>
                 {% endif %}
             </div>
         </div>
@@ -74,8 +74,32 @@ body_class: page-project-layout
                             <img src="{{ "/img/portfolio/" | prepend: site.baseurl }}{{ section.image }}"alt="Imagem ilustrativa para {{ section.title }}" class="section-image">
                             {% endif %}
 
-                            {% if section.content2 %}
-                                <p>{{ section.content2 | markdownify }}</p>
+                            {% if section.button-dashboard %}
+                            <a href="{{ section.button-dashboard-link }}" class="btn button-dashboard" target="_blank">{{ section.button-dashboard }}</a>
+                            {% endif %}
+
+                            {% if section.subtitle2 %}
+                            <h3 class="section-subheading">{{ section.subtitle2 }}</h3>
+                            <p>{{ section.content2 | markdownify }}</p>
+                                {% if section.image2 %}
+                                <img src="{{ "/img/portfolio/" | prepend: site.baseurl }}{{ section.image2 }}"alt="Imagem ilustrativa para {{ section.title }}" class="section-image">
+                                {% endif %}
+                            {% endif %}
+
+                            {% if section.subtitle3 %}
+                            <h3 class="section-subheading">{{ section.subtitle3 }}</h3>
+                            <p>{{ section.content3 | markdownify }}</p>
+                                {% if section.image3 %}
+                                <img src="{{ "/img/portfolio/" | prepend: site.baseurl }}{{ section.image3 }}"alt="Imagem ilustrativa para {{ section.title }}" class="section-image">
+                                {% endif %}
+                            {% endif %}
+
+                            {% if section.subtitle4 %}
+                            <h3 class="section-subheading">{{ section.subtitle4 }}</h3>
+                            <p>{{ section.content4 | markdownify }}</p>
+                                {% if section.image4 %}
+                                <img src="{{ "/img/portfolio/" | prepend: site.baseurl }}{{ section.image4 }}"alt="Imagem ilustrativa para {{ section.title }}" class="section-image">
+                                {% endif %}
                             {% endif %}
                         </div>
                     </div>
