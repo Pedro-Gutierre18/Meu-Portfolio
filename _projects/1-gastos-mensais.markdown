@@ -74,7 +74,7 @@ sections:
 
       <b>Padrões de Pagamento:</b> Foi observado que mais de 33% das despesas são realizadas com "Cartão de Crédito", o que, embora prático, destaca a necessidade de um acompanhamento rigoroso da fatura para evitar o endividamento e aproveitar programas de benefícios.
     
-    image: "01-dashboard.gif"
+    image: 01-dashboard.gif
     button-dashboard: "Veja o dashboard"
     button-dashboard-link: "https://app.powerbi.com/view?r=eyJrIjoiMTUxNDg2ZGYtYzRmOS00YTNjLThmYTQtMjY2NGVkYzllMTYyIiwidCI6Ijc1YjY4N2ZhLTZhYmItNDczZi04Y2QwLTc1MjUxZmJhMGE3MSJ9"
 
