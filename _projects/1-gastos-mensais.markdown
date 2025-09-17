@@ -17,7 +17,7 @@ sections:
     content: |
       Em um cenário de múltiplas transações diárias, o controle financeiro por meio de planilhas estáticas ou anotações manuais se mostra ineficiente e propenso a erros. A dificuldade em consolidar dados de diferentes fontes e a ausência de visualizações claras impedem uma análise aprofundada dos hábitos de consumo.
 
-    image: "01-perguntas"
+    image: "01-perguntas.svg"
     
   - title: "O Processo"
     icon: "fa-solid fa-gears"
