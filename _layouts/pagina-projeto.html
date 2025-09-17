@@ -63,10 +63,10 @@ body_class: page-project-layout
             {% for section in page.sections %}
             <section id="section-{{ forloop.index }}" class="project-section">
                 <div class="row">
-                    <div class="col-lg-4">
+                    <div class="col-lg-12">
                         <h2 class="section-heading">{{ section.title }}</h2>
                     </div>
-                    <div class="col-md-8">
+                    <div class="col-md-12">
                         <div class="section-content">
                             <p>{{ section.content | markdownify }}</p>
 

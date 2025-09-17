@@ -936,7 +936,7 @@ footer span.copyright {
 /* Header*/
 
 .project-hero-header {
-    height: 50vh;
+    height: 100vh;
     margin: 0 auto;
     color: #fff;   
     background-size: cover;
@@ -953,7 +953,7 @@ footer span.copyright {
 }
 
 .project-hero-header h1 {
-    font-size: 3.5rem;
+    font-size: 5rem;
     font-weight: 700;
     margin-bottom: 1.5rem;
 }
@@ -976,18 +976,19 @@ footer span.copyright {
 
 .project-hero-header .btn {
     font-weight: bold;
-    padding: 12px 28px;
+    padding: 15px 30px;
     border-radius: 20px;
     background-color: transparent;
     transition: all 0.3s ease-in-out;
-    border: 3px solid {{site.data.template.color.primary}};
+    border: 2px solid #fff;
 }
 
 .project-hero-header .btn:hover,
 .project-hero-header .btn:active,
 .project-hero-header .btn:focus {
     color: #fff;
-    background-color: #{{site.data.template.color.primary}};
+    background-color: #333;
+    border: 2px solid #333;
 }
 
 @media screen and (max-width: 768px) {
@@ -1017,9 +1018,10 @@ footer span.copyright {
 }
 
 .section-content .button-dashboard{
+    color: #333;
     margin: 15px 0 !important;
     text-transform: uppercase;
-    border: 1px solid #{{site.data.template.color.primary}};
+    border: 1px solid #333;
     border-radius: 20px;
     transition: all 0.3s ease-in-out;
 }
@@ -1028,7 +1030,7 @@ footer span.copyright {
 .section-content .button-dashboard:active,
 .section-content .button-dashboard:focus {
     color: #fff;
-    background-color: #{{site.data.template.color.primary}};
+    background-color: #333;
 }
 
 .section-subheading {
@@ -1043,7 +1045,7 @@ footer span.copyright {
   width: 100%;
   border-radius: 20px;
   margin-top: 1.5rem;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  margin-bottom: 1.5rem;
 }
 
 .project-content .section-heading {

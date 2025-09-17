@@ -2,7 +2,7 @@
 
 layout: pagina-projeto
 title: Gastos Mensais
-thumbnail: 01-thumbnail.png
+thumbnail: "01-thumbnail.png"
 subtitle: Veja o estudo de caso
 alt: Imagem ilustrativa do projeto
 category: excel python powerbi pandas
@@ -17,7 +17,7 @@ sections:
     content: |
       Em um cenário de múltiplas transações diárias, o controle financeiro por meio de planilhas estáticas ou anotações manuais se mostra ineficiente e propenso a erros. A dificuldade em consolidar dados de diferentes fontes e a ausência de visualizações claras impedem uma análise aprofundada dos hábitos de consumo.
 
-    image: "01-card1.svg"
+    image: "01-perguntas"
     
   - title: "O Processo"
     icon: "fa-solid fa-gears"
@@ -68,13 +68,13 @@ sections:
     content: |
       O dashboard interativo permitiu a extração de insights valiosos que não seriam facilmente visíveis em uma planilha estática:
 
-      <b>Identificação dos Maiores Centros de Custo:</b> A análise por categoria revelou que "Moradia" é a despeza com maior gasto, representando 25% da renda total, que leve em consideração procurar um lugar com aluguel mais barato.
+      <b>Identificação dos Maiores Centros de Custo:</b> A análise por categoria revelou que "Moradia" é a despesa com maior gasto, representando 25% da renda total, que leve em consideração procurar um lugar com aluguel mais barato.
 
       <b>Análise de Tendências e Sazonalidade:</b> O gráfico de evolução temporal expôs um padrão claro de aumento nas despesas com "Lazer" durante os meses de férias (Julho e Dezembro), permitindo um planejamento financeiro proativo para esses períodos.
 
       <b>Padrões de Pagamento:</b> Foi observado que mais de 33% das despesas são realizadas com "Cartão de Crédito", o que, embora prático, destaca a necessidade de um acompanhamento rigoroso da fatura para evitar o endividamento e aproveitar programas de benefícios.
     
-    image: "01-Dashboard.gif"
+    image: "01-dashboard.gif"
     button-dashboard: "Veja o dashboard"
     button-dashboard-link: "https://app.powerbi.com/view?r=eyJrIjoiMTUxNDg2ZGYtYzRmOS00YTNjLThmYTQtMjY2NGVkYzllMTYyIiwidCI6Ijc1YjY4N2ZhLTZhYmItNDczZi04Y2QwLTc1MjUxZmJhMGE3MSJ9"
 
