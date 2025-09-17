@@ -79,7 +79,7 @@ sections:
 
       <b>Fatores Preditivos:</b> O modelo de ML destacou MonthlyIncome (salário), OverTime_Yes (horas extras), Age (idade) e TotalWorkingYears (total de anos trabalhados) como os principais influenciadores da rotatividade.
     
-    image: "02-dashboard.gif"
+    image: "02_dashboard.gif"
     button-dashboard: "Veja o dashboard"
     button-dashboard-link: "https://app.powerbi.com/view?r=eyJrIjoiN2QzZjg5ODAtMjYzOS00ODZjLWE0YWYtYzFhYWViNDM2YzE3IiwidCI6Ijc1YjY4N2ZhLTZhYmItNDczZi04Y2QwLTc1MjUxZmJhMGE3MSJ9"
 
