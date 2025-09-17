@@ -51,7 +51,7 @@ sections:
 
       <b>Identificação da Importância das Features:</b> O modelo Random Forest forneceu uma lista dos fatores mais importantes para prever a rotatividade, permitindo focar nas causas de maior impacto.
 
-    image3: "02-grafico"
+    image3: "02-grafico.png"
 
     subtitle4: "VISUALIZAÇÃO DE INSIGHTS E DASHBOARD NO POWER BI"
 
