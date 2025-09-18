@@ -2,7 +2,7 @@
 
 layout: pagina-projeto
 title: Análise de RH
-thumbnail: 02-thumbnail.jpg
+thumbnail: 02-thumb.png
 subtitle: Veja o estudo de caso
 alt: Imagem ilustrativa do projeto
 category: python powerbi 
@@ -15,7 +15,7 @@ sections:
   - title: "O Problema"
     icon: "fa-solid fa-triangle-exclamation"
     content: |
-      Em um cenário de múltiplas transações diárias, o controle financeiro por meio de planilhas estáticas ou anotações manuais se mostra ineficiente e propenso a erros. A dificuldade em consolidar dados de diferentes fontes e a ausência de visualizações claras impedem uma análise aprofundada dos hábitos de consumo.
+      A rotatividade de funcionários (turnover) é um dos maiores desafios do RH, gerando custos significativos com recrutamento, treinamento e perda de conhecimento. Sem uma análise profunda, as empresas lutam para identificar as verdadeiras causas das saídas, resultando em estratégias de retenção genéricas e ineficazes.
 
     image: "02-perguntas.svg"
     
